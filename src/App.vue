@@ -1,6 +1,6 @@
 <template>
   <nav>
-    <router-link to="/todolist">Todos</router-link> |
+    <router-link to="/">Todos</router-link> |
     <router-link to="/create-todo">Create Todo</router-link>
   </nav>
   <router-view/>
