@@ -1552,6 +1552,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/dotenv@npm:^8.2.0":
+  version: 8.2.0
+  resolution: "@types/dotenv@npm:8.2.0"
+  dependencies:
+    dotenv: "*"
+  checksum: a1f524da7dc18b09bdb6c2613b9abbbe8ca575621cce4625efc7f98daf2ba07c7dbab622c9bb394507a12c5c515f9cbbbba4aeec17b801c88faeb8e8e656d460
+  languageName: node
+  linkType: hard
+
 "@types/eslint-scope@npm:^3.7.3":
   version: 3.7.3
   resolution: "@types/eslint-scope@npm:3.7.3"
@@ -3134,6 +3143,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"buefy@npm:^0.9.20":
+  version: 0.9.20
+  resolution: "buefy@npm:0.9.20"
+  dependencies:
+    bulma: 0.9.3
+  peerDependencies:
+    vue: ^2.6.11
+  checksum: c1e8babc63cdf6ae905a8772dfe5e21e5d64209bda61c7e46c24171e94884e7e9590d06dd679f5b06ef6d4cc7bff0ab51a2a429eedef0607e747fc22c7e45fdf
+  languageName: node
+  linkType: hard
+
 "buffer-from@npm:^1.0.0":
   version: 1.1.2
   resolution: "buffer-from@npm:1.1.2"
@@ -3148,6 +3168,13 @@ __metadata:
     base64-js: ^1.3.1
     ieee754: ^1.1.13
   checksum: e2cf8429e1c4c7b8cbd30834ac09bd61da46ce35f5c22a78e6c2f04497d6d25541b16881e30a019c6fd3154150650ccee27a308eff3e26229d788bbdeb08ab84
+  languageName: node
+  linkType: hard
+
+"bulma@npm:0.9.3":
+  version: 0.9.3
+  resolution: "bulma@npm:0.9.3"
+  checksum: 98e1c2794b70c6339b41afc929bec6e22eae5b2751dc5fb0d9b7195d1c799ba4129a6fda1097e966db492f65fc4bed719da2498356c1ea6a9972f23ad3025d5c
   languageName: node
   linkType: hard
 
@@ -4103,6 +4130,13 @@ __metadata:
   version: 5.1.0
   resolution: "dotenv-expand@npm:5.1.0"
   checksum: 8017675b7f254384915d55f9eb6388e577cf0a1231a28d54b0ca03b782be9501b0ac90ac57338636d395fa59051e6209e9b44b8ddf169ce6076dffb5dea227d3
+  languageName: node
+  linkType: hard
+
+"dotenv@npm:*, dotenv@npm:^16.0.0":
+  version: 16.0.0
+  resolution: "dotenv@npm:16.0.0"
+  checksum: 664cebb51f0a9a1d1b930f51f0271e72e26d62feaecc9dc03df39453dd494b4e724809ca480fb3ec3213382b1ed3f791aaeb83569a137f9329ce58efd4853dbf
   languageName: node
   linkType: hard
 
@@ -9162,6 +9196,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "vue-todo@workspace:."
   dependencies:
+    "@types/dotenv": ^8.2.0
     "@typescript-eslint/eslint-plugin": ^5.4.0
     "@typescript-eslint/parser": ^5.4.0
     "@vue/cli-plugin-babel": ~5.0.0
@@ -9172,7 +9207,9 @@ __metadata:
     "@vue/cli-service": ~5.0.0
     "@vue/eslint-config-airbnb": ^6.0.0
     "@vue/eslint-config-typescript": ^9.1.0
+    buefy: ^0.9.20
     core-js: ^3.8.3
+    dotenv: ^16.0.0
     eslint: ^7.32.0
     eslint-plugin-import: ^2.25.3
     eslint-plugin-vue: ^8.0.3

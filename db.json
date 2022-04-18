@@ -1,0 +1,8 @@
+{
+    "todos": [
+        {
+            "description": "My first todo",
+            "completed": false
+        }
+    ]
+}

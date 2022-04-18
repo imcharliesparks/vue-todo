@@ -27,9 +27,11 @@ export default defineComponent({
   },
   methods: {
     updateTodo() {
+      // @ts-ignore
       this.$store.dispatch('updateTodo', this.todo)
     },
     deleteTodo() {
+      // @ts-ignore
       this.$store.dispatch('deleteTodo', this.todo)
     },
   },

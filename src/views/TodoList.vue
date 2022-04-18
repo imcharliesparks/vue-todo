@@ -12,12 +12,8 @@ import { defineComponent } from 'vue'
 import Todo from '../components/Todo.vue'
 
 export default defineComponent({
-//   setup() {
-//     console.log('here')
-//   },
   computed: {
     todos() {
-      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
       // @ts-ignore
       return this.$store.getters.getCurrentTodos
     },
