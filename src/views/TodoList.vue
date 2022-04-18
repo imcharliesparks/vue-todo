@@ -18,6 +18,10 @@ export default defineComponent({
       return this.$store.getters.getCurrentTodos
     },
   },
+  created() {
+    // @ts-ignore
+    this.$store.dispatch('init')
+  },
   components: {
     Todo,
   },

@@ -38,6 +38,7 @@ export default defineComponent({
         description: this.description,
         completed: this.completed === 'Yes',
       }
+      // @ts-ignore
       await this.$store.dispatch('addTodo', payload)
       this.$router.push('/todolist')
     },

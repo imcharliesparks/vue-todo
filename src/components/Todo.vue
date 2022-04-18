@@ -21,18 +21,17 @@ export default defineComponent({
   },
   computed: {
     completed() {
-      console.log('this.todos.status', this.todo.completed)
       return this.todo.completed ? 'Completed' : 'Not Completed'
     },
   },
   methods: {
     updateTodo() {
       // @ts-ignore
-      this.$store.dispatch('updateTodo', this.todo)
+      this.$store.dispatch('updateTodo', this.todo.id)
     },
     deleteTodo() {
       // @ts-ignore
-      this.$store.dispatch('deleteTodo', this.todo)
+      this.$store.dispatch('deleteTodo', this.todo.id)
     },
   },
 })
